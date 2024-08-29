@@ -1,4 +1,4 @@
-import { db, collection, getDocs } from './firebase.js';
+import { db, collection, getDocs } from '.././scripts/firebase.js';
 
 async function fetchStorageData() {
     try {

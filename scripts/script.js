@@ -1,4 +1,4 @@
-import { auth, signInWithEmailAndPassword, signOut} from './firebase.js'; // Import Firebase-related functions from the new file
+import { auth, signInWithEmailAndPassword, signOut} from '.././scripts/firebase.js'; // Import Firebase-related functions from the new file
 
 // Handle login form submission
 document.getElementById('login-form')?.addEventListener('submit', function (e) {
