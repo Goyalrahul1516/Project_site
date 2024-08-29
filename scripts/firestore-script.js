@@ -23,7 +23,7 @@ async function fetchStorageData() {
             const storageLocationID = entry.storageLocationID; // Use storageLocationID
 
             console.log(`Grain Entry Location ID: ${storageLocationID}`); // Debugging line
-            console.log(`Grain Entry Weight: ${entry.initialWeight}`); // Debugging line
+            console.log(`Grain Entry Weight: ${entry.initialweight}`); // Debugging line
 
             if (locationData[storageLocationID]) {
                 locationData[storageLocationID].numberOfsacks += 1; // Count every grain entry as a sack
@@ -36,7 +36,7 @@ async function fetchStorageData() {
         // Prepare HTML output
         let output = '<table><tr><th>Storage Location</th><th>Total Weight</th><th>Number of Sacks</th></tr>';
         for (const id in locationData) {
-            output += `<tr>
+            output += `<tr onclick="window.location.href='grainentries.html?storageLocationID=${id}'">
                 <td>${locationData[id].name}</td>
                 <td>${locationData[id].totalweight.toFixed(2)}</td> <!-- Fixed to 2 decimal places -->
                 <td>${locationData[id].numberOfsacks}</td>

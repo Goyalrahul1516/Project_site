@@ -65,6 +65,38 @@ h2 {
     position: relative;
 }
 
+/* Grain Entries Page Styles */
+.grainentries-container {
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.grainentries-container h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#location-name {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#grain-entries {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Table Styles */
 table {
     width: 100%;
@@ -84,6 +116,15 @@ th {
 
 tr:hover {
     background-color: #f1f1f1;
+}
+
+/* Highlight Styles for Grain Entries */
+tr[style*="background-color: red;"] {
+    background-color: #f8d7da; /* Light red for older than 6 months */
+}
+
+tr[style*="background-color: yellow;"] {
+    background-color: #fff3cd; /* Light yellow for older than 3 months */
 }
 
 /* Login Page Styles */
