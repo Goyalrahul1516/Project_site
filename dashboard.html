@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js for graphing -->
 </head>
 <body>
     <div class="dashboard-container">
-        <h2>Dashboard</h2>
         <!-- Logout button -->
         <button id="logout-btn">Logout</button>
-        <!-- Add a canvas element where the chart will be rendered -->
-        <canvas id="myChart" width="400" height="200"></canvas>
-        <!-- Add a container to display Firestore data -->
+        <button id="back-btn">Back</button>
+        <iframe title="Power BI Report" 
+        width="100%" 
+        height="100%" 
+        src="https://app.powerbi.com/reportEmbed?reportId=4e424bb0-922d-49ad-bc04-0daaa3b077b0&autoAuth=true&ctid=2488691f-3ab3-4522-a311-751d8cc8ebd5" 
+        frameborder="0" 
+        allowFullScreen="true">
+        </iframe>
     </div>
     <script type="module" src="script.js"></script> <!-- Ensure it's loaded as a module -->
 </body>

@@ -1,14 +1,92 @@
-/* Existing styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
+h2 {
+    margin: 0;
+    color: #333;
+}
+
+/* Button Styles */
+#logout-btn, #back-btn {
+    position: absolute;
+    bottom: 5px;
+    width: 100px;
+    padding: 10px 20px;
+    background-color: #d9534f; /* Bootstrap danger color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#back-btn {
+    left: 10px;
+}
+
+#logout-btn {
+    right: 10px;
+}
+
+#back-btn:hover, #logout-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Database Styles */
+#storage-data {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.firestore-container {
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 98%; /* Adjust height for header and spacing */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    position: relative;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Login Page Styles */
 .login-container {
     background-color: #fff;
     padding: 20px;
@@ -17,10 +95,9 @@ body {
     width: 300px;
 }
 
-h2 {
+.login-container h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
 }
 
 .input-group {
@@ -52,46 +129,69 @@ button {
 }
 
 button:hover {
-    background-color: #0d450d;
+    background-color: #4cae4c;
 }
 
-/* New styles for dashboard */
+/* Dashboard Page Styles */
 .dashboard-container {
-    width: 95%;
-    height: 75vh; /* Full viewport height */
-    margin: 0;
-    padding: 20px;
+    padding: 10px;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 98%; /* Adjust height for header and spacing */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    position: relative;
 }
 
 .dashboard-container h2 {
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-#myChart {
-    max-width: 100%;
-    height: auto;
+.powerbi-container {
+    width: 100%;
+    height: calc(100% - 60px); /* Adjust height for spacing */
 }
 
-#logout-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 20px;
-    margin-right: 5px; /* Add right-side margin */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Selection Page Styles */
+.selection-container {
     padding: 10px;
-    background-color: #4a2f2f; /* Bootstrap danger color */
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 98%; /* Adjust height for header and spacing */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    position: relative;
+}
+
+#dashboard-button, #database-button {
+    position: relative;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: #d9534f; /* Bootstrap danger color */
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    width: 20%;
+    margin: 10px; /* Add margin to separate the buttons */
 }
 
-#logout-btn:hover {
-    background-color: #c9302c;
+#dashboard-button:hover, #database-button:hover {
+    background-color: #c9302c; /* Darker shade on hover */
 }

@@ -12,7 +12,7 @@ document.getElementById('login-form')?.addEventListener('submit', function (e) {
         // Signed in
         var user = userCredential.user;
         alert('Login Successful');
-        window.location.href = "dashboard.html"; // Redirect to the new page
+        window.location.href = "selection.html"; // Redirect to the new page
     })
     .catch((error) => {
         var errorCode = error.code;
@@ -34,4 +34,18 @@ document.getElementById('logout-btn')?.addEventListener('click', () => {
     });
 });
 
+// Handle back button click
+document.getElementById('back-btn')?.addEventListener('click', () => {
+    window.location.href = "selection.html"; // Redirect to the new page
+});
+
+// Handle dashboard button click
+document.getElementById('dashboard-button')?.addEventListener('click', () => {
+    window.location.href = "dashboard.html"; // Redirect to the new page
+});
+
+// Handle database button click
+document.getElementById('database-button')?.addEventListener('click', () => {
+    window.location.href = "firestore.html"; // Redirect to the new page
+});
 
