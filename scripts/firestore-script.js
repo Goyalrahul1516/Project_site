@@ -34,7 +34,7 @@ async function fetchStorageData() {
         });
 
         // Prepare HTML output
-        let output = '<table><tr><th>Storage Location</th><th>Total Weight</th><th>Number of Sacks</th></tr>';
+        let output = '<table><tr><th>Storage Location</th><th>Total Weight (Kg.)</th><th>Number of Sacks</th></tr>';
         for (const id in locationData) {
             output += `<tr onclick="window.location.href='grainentries.html?storageLocationID=${id}'">
                 <td>${locationData[id].name}</td>

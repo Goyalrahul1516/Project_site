@@ -32,9 +32,9 @@ async function fetchGrainEntries() {
             // Determine row color based on age
             let rowColor = '';
             if (ageInMonths > 6) {
-                rowColor = 'style="background-color: red;"';
+                rowColor = 'style="background-color: #da5353;"';
             } else if (ageInMonths > 3) {
-                rowColor = 'style="background-color: yellow;"';
+                rowColor = 'style="background-color: #ef9c9c;"';
             }
 
             output += `<tr ${rowColor}>
@@ -63,3 +63,7 @@ fetchGrainEntries();
 document.getElementById('back-btn').addEventListener('click', () => {
     window.location.href = 'firestore.html'; // Navigate back to firestore.html
 });
+
+setInterval(() => {
+    location.reload();
+}, 30000);
