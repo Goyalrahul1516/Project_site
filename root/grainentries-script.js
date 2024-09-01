@@ -1,4 +1,4 @@
-import { db, collection, getDocs, query, where } from 'firebase.js';
+import { db, collection, getDocs, query, where } from './firebase.js';
 
 async function fetchGrainEntries() {
     try {
